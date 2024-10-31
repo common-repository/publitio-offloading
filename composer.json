@@ -1,0 +1,14 @@
+{
+    "name": "publitio/publitio-offloading",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Publitio Publitio",
+            "email": "info@publit.io"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "publitio/publitio": "dev-master"
+    }
+}

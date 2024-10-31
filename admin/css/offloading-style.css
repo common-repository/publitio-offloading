@@ -1,0 +1,248 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+.page-offloading-wrapper {
+    padding: 15px 50px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.5rem;
+}
+
+.section-offloading-title {
+    color: #4D6D90;
+    font-weight: 800;
+}
+
+.form-offload-label {
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.form-offload-input,.form-offload-select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    height: 40px !important;
+}
+
+.button-section-offloading-wrapper {
+    text-align: center;
+}
+
+.publitio-offload-button {
+    background-color: #4D6D90;
+    padding: 10px 20px;
+    border: 1px solid #4D6D90;
+    color: white;
+    border-radius: 3%;
+    font-size: 18px;
+    box-shadow: 5px 5px 5px grey;
+    cursor: pointer;
+}
+
+.publitio-a {
+    color: #4D6D90
+}
+
+.offloading-block {
+    font-size: 0.8rem;
+}
+
+.error-offload-block {
+    color: #cd3703;
+}
+
+.success-offload-block {
+    color: #4BB543;
+}
+
+.publitio-switch {
+    position: relative;
+    display: inline-block;
+    width: 55px;
+    height: 26px;
+}
+
+.publitio-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.publitio-slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.publitio-slider:before {
+    position: absolute;
+    content: "";
+    height: 17px;
+    width: 16px;
+    left: 8px;
+    bottom: 5px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.download-text {
+    font-size: 16px;
+}
+
+.danger-text {
+    font-size: 16px;
+    font-weight: bold;
+    color: #e74444;
+}
+
+input:checked + .publitio-slider {
+    background-color: #4D6D90;
+}
+
+input[type="checkbox"]:disabled + .publitio-slider {
+    background-color: #e2e2e2;
+}
+
+input:focus + .publitio-slider {
+    box-shadow: 0 0 1px #4D6D90;
+}
+
+input:checked + .publitio-slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+.publitio-slider.round {
+    border-radius: 34px;
+}
+
+.publitio-slider.round:before {
+    border-radius: 50%;
+}
+
+.files-checkbox {
+    display: flex;
+    margin-top: 15px;
+}
+
+.offload-checkbox {
+    flex-grow: 1;
+    margin-bottom: 10px;
+}
+
+.files_label {
+    font-size:16px;
+}
+
+.files-offload-input,.files-offload-delete {
+    margin-top: 0 !important;
+}
+
+.off-margin {
+    margin: 10px 0;
+}
+
+#publitioProgress {
+    width: 100%;
+    background-color: white;
+    border-radius: 4px;
+}
+
+#publitioBar {
+    width: 0;
+    height: 50px;
+    background-color: #4D6D90;
+}
+
+.sync-button {
+    font-size: 16px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    opacity: 1;
+    display: none;
+}
+
+#loadPublitioNumber {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 22px;
+    padding-bottom: 5px;
+}
+
+.offloading-popup {
+    margin: 0 auto;
+    width: 50%;
+    position: fixed;
+    border-radius: 4px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.offloading-popup h2 {
+    margin-top: 0;
+    color: #333;
+    font-family: Tahoma, Arial, sans-serif;
+}
+.offloading-popup .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+}
+.offloading-popup .close:hover {
+    color: #06D85F;
+}
+.offloading-popup .content {
+    max-height: 30%;
+    overflow: auto;
+}
+
+.red-text {
+    color: #e74444;
+}
+
+@media screen and (max-width: 700px){
+    .box{
+        width: 70%;
+    }
+    .offloading-popup{
+        width: 70%;
+    }
+}
+
+
+
+
